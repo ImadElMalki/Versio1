@@ -1,0 +1,529 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+html, body{
+    background-color: rgb(190, 226, 233);
+}
+
+p{
+    font-weight: 500;
+}
+
+header{
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+.menu_horitzontal{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(75, 156, 180);
+    
+}
+
+.menu_vertical ul{
+    list-style: none;
+    margin: 0 auto;
+    
+}
+
+
+.menu_horitzontal ul{
+    position: absolute;
+    
+}
+
+li{
+    list-style: none;
+    
+}
+
+.menu_horitzontal li>a{
+    background-color: rgb(75, 156, 180);
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    width: 150px;
+    
+    
+}
+
+.menu_horitzontal li>a:hover{
+    color: black;
+    font-weight: bold;
+    background-color: rgb(118, 223, 255);
+    border-radius: 5px;
+}
+
+.menu_horitzontal>li{
+    float: left;
+    text-align:center;
+}
+
+.Inici, .Actors, .Cinemes, .Fotografies, .Critica, .Links{
+    width: 196px;
+    font-weight: bold;
+}
+.menu_horitzontal>li>ul{
+    display: none;
+}
+
+.menu_horitzontal>li:hover>ul {
+    display:block;
+}
+
+nav{
+    margin: auto;
+    background-color: black;
+}
+
+
+.titol_argument{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.titol_personatges{
+    text-align: center;
+    font-size: 30px;
+}
+
+.titol_fotografies{
+    text-align: center;
+    font-size: 30px;
+}
+
+.titol_trailer{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+
+.titol_critica{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 4%;
+    margin-top: 6%;
+}
+
+.titol_formulari{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+
+
+.titol_principal{
+    display: flex;
+    flex-wrap: wrap;
+    color: #1f3438;
+    margin-bottom: 3%;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.imatge_principal{
+    background-image: url(../imatges/InTime.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 5px;
+    height: 621px;
+    margin: 0.5%;
+}
+
+
+.argument{
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 3%;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(224, 248, 252);
+    margin: 0.5%;
+    margin-bottom: 3%;
+}
+
+
+
+.informacio{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.dades_generals, .index_actors, .dades_cinemes, .taula_estrenos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1%;
+    border-radius: 5px;
+    padding: 1%;    
+}
+
+dt{
+    font-weight: bold;
+}
+
+.dades_generals, .index_actors, .dades_cinemes{
+    background-color: rgb(224, 248, 252);
+}
+
+#Inici, #Actors, #Cinemes{
+    display: flex;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.index_actors a{
+    text-decoration: none;
+    color: black;
+}
+
+.taula_estrenos{
+    width: 45%;
+    text-align: center;
+    border: none;
+}
+
+.taula_estrenos th{
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(224, 248, 252);
+}
+
+.taula_estrenos td{
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(224, 248, 252);
+}
+
+.taula{
+    border-collapse: separate;
+    border-spacing:  5px;
+    flex-grow: 1;
+}
+
+
+
+.personatges, .personatges1, .personatges2, .personatges3, .personatges4{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-top: 3%;
+}
+
+.personatges4{
+    margin-bottom: 5%;
+}
+
+
+.caixapersonatge1, .caixapersonatge2, .caixapersonatge3, .caixapersonatge4, .caixapersonatge5, .caixapersonatge6, .caixapersonatge7, .caixapersonatge8, .caixapersonatge9, .caixapersonatge10{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 5px;
+    margin: 0.4%;
+    width: 654px;
+    height: 315px;
+}
+
+
+.fotografia1, .fotografia2, .fotografia3, .fotografia4, .fotografia5, .fotografia6, .fotografia7, .fotografia8, .fotografia9, .fotografia10{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 25%;
+    height: 95%;
+    border-radius: 5px;
+    margin: 5px;
+    background-size: cover;
+}
+
+
+.descripcio1, .descripcio2, .descripcio3, .descripcio4, .descripcio5, .descripcio6, .descripcio7, .descripcio8, .descripcio9, .descripcio10{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 60%;
+    border-radius: 5px;
+    margin: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 20px;
+    text-align: left;
+    background-color: rgb(224, 248, 252);
+}
+
+.fotografies{
+    margin-top: 3%;
+}
+
+.fotografia1{
+    background-image: url(../imatges/Justin.jpg);
+}
+
+
+.fotografia2{
+    background-image: url(../imatges/Olivia.jpg);
+}
+
+
+.fotografia3{
+    background-image: url(../imatges/Shyloh.jpeg);
+}
+
+
+.fotografia4{
+    background-image: url(../imatges/Johnny.jpg);
+}
+
+
+.fotografia5{
+    background-image: url(../imatges/Will.jpg);
+}
+
+
+.fotografia6{
+    background-image: url(../imatges/Michael.jpg);
+}
+
+
+.fotografia7{
+    background-image: url(../imatges/Nick.jpg);
+}
+
+
+.fotografia8{
+    background-image: url(../imatges/Peltz.jpg);
+}
+
+
+.fotografia9{
+    background-image: url(../imatges/Ray.jpg);
+}
+
+
+.fotografia10{
+    background-image: url(../imatges/Matt.jpg);
+}
+
+
+
+
+
+
+
+.fotografies, .fotografies1, .fotografies2, .fotografies3, .fotografies4 {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(190, 226, 233);
+}
+
+.fotografies4{
+    margin-bottom: 5%;
+}
+.caixafotografies1, .caixafotografies2, .caixafotografies3, .caixafotografies4, .caixafotografies5, .caixafotografies6, .caixafotografies7, .caixafotografies8, .caixafotografies9, .caixafotografies10{
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+
+.caixafotografies1{
+    width: 646px;
+    height: 431px;
+    background-image: url(../imatges/Escena1.jpg);
+}
+
+.caixafotografies2{
+    width: 693px;
+    height: 431px;
+    background-image: url(../imatges/Escena5.jpg);
+}
+
+.caixafotografies3{
+    width: 300px;
+    height: 450px;
+    background-image: url(../imatges/Escena9.png);
+}
+
+.caixafotografies4{
+    width: 1039px;
+    height: 450px;
+    background-image: url(../imatges/Escena2.jpg);
+}
+
+.caixafotografies5{
+    width: 878px;
+    height: 325px;
+    background-image: url(../imatges/Escena1.png);
+}
+
+.caixafotografies6{
+    width: 461px;
+    height: 325px;
+    background-image: url(../imatges/Escena10.jpg);
+}
+
+.caixafotografies7{
+    width: 650px;
+    height: 445px;
+    background-image: url(../imatges/Escena4.jpg);
+}
+
+.caixafotografies8{
+    width: 689px;
+    height: 445px;
+    background-image: url(../imatges/Escena6.jpeg);
+}
+
+.caixafotografies9{
+    width: 567px;
+    height: 362px;
+    background-image: url(../imatges/Escena7.jpg);
+}
+
+.caixafotografies10{
+    width: 772px;
+    height: 362px;
+    background-image: url(../imatges/Escena8.png);
+}
+
+
+
+.trailer {
+	text-align: center;
+}
+
+
+.caixa_critica{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    border-radius: 5px;
+    flex-grow: 1;
+    border: 2px rgb(75, 156, 180) solid;
+    border-style: dashed;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.critica{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    flex-grow: 1;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    background-color: rgb(224, 248, 252);
+
+}
+
+
+label{
+    display: inline-block;
+    width: 120px;
+
+}
+label, input{
+    margin-top: 6px;
+    border-radius: 5px;
+    border-color: black;
+    
+}
+
+
+.un{
+    flex-wrap: wrap;
+    width: 35%;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: rgb(224, 248, 252);
+}
+
+.dos{
+    margin-left: 2%;
+    flex-wrap: wrap;
+    width: 35%;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: rgb(224, 248, 252);
+}
+
+.caixadades{
+    display: flex;
+    margin-top: 3%;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.dades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 8px;
+    border: none;
+    margin: 0.5%;
+}
+
+#Opinio{
+    display: flex;
+    border-radius: 8px;
+    width: 25%;
+    height: 130px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+#enviar{
+    width: 71.85px;
+    height: 25.71px;
+}
+
+
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 26%;
+    margin-left: 2%;
+    align-items: center;
+}
+
+.botons{
+    margin-top: 1%;
+    margin-left: 0.2%;
+    margin-bottom: 0.5%;
+}
